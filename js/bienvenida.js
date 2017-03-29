@@ -4,13 +4,12 @@ window.onload = function (){
     var correo = document.getElementById("correo-coder");
     var pass = document.getElementById("pass-coder");
 
-    var objetoCoder = JSON.parse(localStorage.getItem("nueva-coder"));
+    var objetoCoder = JSON.parse(localStorage.getItem("nuevo-clase"));
 
     nombre.innerHTML = objetoCoder.nombre;
     apellido.innerHTML = objetoCoder.apellido;
-    edad.innerHTML = objetoCoder.edad;
-    genero.innerHTML = objetoCoder.genero;
-    ciudad.innerHTML = objetoCoder.ciudad;
-    pais.innerHTML = objetoCoder.pais;
+    correo.innerHTML = objetoCoder.correo;
+    pass.innerHTML = objetoCoder.pass;
+
 
 }

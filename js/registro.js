@@ -20,18 +20,14 @@ window.addEventListener ('load',function(){
       var apellido = document.getElementById('ap');
       var correo = document.getElementById('correo');
       var pass = document.getElementById('palabra');
-      var reg = document.getElementById('datos');
 
       registro.addEventListener('click',function(evento){
           evento.preventDefault();
-          console.log(nombre.length);
           if(nombre.value.length != 0 && apellido.value.length != 0 && correo.value.length != 0 && pass.value.length != 0){
                 var ingreso = new NuevaCoder(nombre.value, apellido.value, correo.value, pass.value);
                 localStorage.setItem("nuevo-clase",JSON.stringify(ingreso));
                 window.location = "index3.html";
-                console.log (ingreso);
-                registro.innerHTML += clase[clase.length -1].coder();
-                document.getElementById("form").reset()
+                document.getElementById("registro").reset()
 
           } else {
                 var indicaciones = document.getElementById("mensaje");
