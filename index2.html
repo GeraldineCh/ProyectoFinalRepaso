@@ -10,13 +10,17 @@
 		<form id="registro" action="">
 			<p>
 			<label>Nombre: </label>
-			<input type="text" id="name" placeholder="Ingresa tu nombre" required="">
+			<input type="text" id="name" placeholder="Ingresa tu nombre" class="entrada">
+			<span id="alert"></span>
 			<br><br><label>Apellido: </label>
-			<input type="text" id="ap" placeholder="Ingresa tu apeliido" required="">
+			<input type="text" id="ap" placeholder="Ingresa tu apeliido" class="entrada">
+			<span id="alert"></span>
 			<br><br><label>Correo: </label>
-			<input type="mail" id="correo" placeholder="Ingresa tu correo electrónico" required="">
+			<input type="text" id="correo" placeholder="Ingresa tu correo electrónico" required="" class="entrada">
+			<span id="alert"></span>
 			<br><br><label>Contraseña: </label>
-			<input type="password" id="palabra-secreta" placeholder="Ingresa tu contraseña" required="">
+			<input type="password" id="palabra" placeholder="Ingresa tu contraseña" class="entrada">
+			<span id="alert"></span>
 			</p>
 			<p>
 				<button id="datos">Regístrate</button>
