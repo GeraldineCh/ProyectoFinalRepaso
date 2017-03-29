@@ -25,7 +25,7 @@ window.addEventListener ('load',function(){
           evento.preventDefault();
           if(nombre.value.length != 0 && apellido.value.length != 0 && correo.value.length != 0 && pass.value.length != 0){
                 var ingreso = new NuevaCoder(nombre.value, apellido.value, correo.value, pass.value);
-                localStorage.setItem("nuevo-clase",JSON.stringify(ingreso));
+                localStorage.setItem("nuevo-coder",JSON.stringify(ingreso));
                 window.location = "index3.html";
                 document.getElementById("registro").reset()
 

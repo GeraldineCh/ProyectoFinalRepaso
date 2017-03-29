@@ -4,7 +4,7 @@ window.onload = function (){
     var correo = document.getElementById("correo-coder");
     var pass = document.getElementById("pass-coder");
 
-    var objetoCoder = JSON.parse(localStorage.getItem("nuevo-clase"));
+    var objetoCoder = JSON.parse(localStorage.getItem("nuevo-coder"));
 
     nombre.innerHTML = objetoCoder.nombre;
     apellido.innerHTML = objetoCoder.apellido;
